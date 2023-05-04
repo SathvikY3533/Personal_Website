@@ -1,0 +1,58 @@
+body {
+    margin: 3%;
+    color: rgb(40,40,40);
+}
+
+h1 {
+    margin: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.movingInfo, .title {
+    padding: 2vmin;
+    border-radius: 25px;
+}
+
+.title {
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    width: 20%;
+    border: rgb(88, 88, 88) 2px solid;
+    padding-bottom: 0;
+}
+
+.movingInfo {
+    background: rgb(231, 231, 231);
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    width: 80%;
+    font-size: 2.5vmin;
+}
+
+.socials {
+    padding-top: 5%;
+}
+
+.socials marquee {
+    width: 90%;
+}
+
+#linkedIn:hover {
+    color: rgb(0, 119, 181);
+}
+
+#youtube:hover {
+    color: red;
+}
+
+#github:hover {
+    fill: #4b4b4b;
+}
+
+#oldWeb:hover{
+    color: #459fff;
+}
