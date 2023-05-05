@@ -7,9 +7,20 @@ h1 {
     margin: 0;
 }
 
+a {
+    color: rgb(40,40,40);
+    text-decoration:none;
+}
+
 .flex-container {
     display: flex;
     flex-direction: row;
+    /* box-shadow: 10px 10px 5px rgb(189, 189, 189); */
+    box-shadow: 10px 10px 10px  rgba(230, 230, 230, 0.6);
+    -moz-box-shadow: 10px 10px 10px  rgba(230, 230, 230, 0.6);
+    -webkit-box-shadow: 10px 10px 10px  rgba(230, 230, 230, 0.6);
+    -o-box-shadow: 10px 10px 10px  rgba(230, 230, 230, 0.6);
+    border-radius: 25px;
 }
 
 .movingInfo, .title {
@@ -21,7 +32,7 @@ h1 {
     border-bottom-right-radius: 0px;
     border-top-right-radius: 0px;
     width: 20%;
-    border: rgb(88, 88, 88) 2px solid;
+    border: rgb(88, 88, 88) .5px solid;
     padding-bottom: 0;
 }
 
@@ -31,6 +42,7 @@ h1 {
     border-top-left-radius: 0px;
     width: 80%;
     font-size: 2.5vmin;
+    border: rgb(88, 88, 88) .5px solid;
 }
 
 .socials {
