@@ -5,6 +5,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 footer {
@@ -37,7 +38,7 @@ a {
     text-decoration:none;
 }
 
-.titleBox, .resumeBox {
+.titleBox, .resumeBox, .projectsList {
     display: flex;
     flex-direction: row;
 }
@@ -47,11 +48,23 @@ a {
     width: 10vw;
 }
 
-.titleBox {
+.projectsList {
+    background-color: rgb(231, 231, 231);
+    width: 20vw;
+    height: 30vh;
+    margin-top: 5vh;
+}
+
+#project1 {
+    padding: 0vh 1vw;
+}
+
+
+.titleBox, .projectsList {
     /* box-shadow: 10px 10px 5px rgb(189, 189, 189); */
-    box-shadow: 10px 10px 10px  rgba(230, 230, 230, 0.6);
-    -moz-box-shadow: 10px 10px 10px  rgba(230, 230, 230, 0.6);
-    -webkit-box-shadow: 10px 10px 10px  rgba(230, 230, 230, 0.6);
+    box-shadow: 6px 6px 10px  rgba(230, 230, 230, 0.6);
+    -moz-box-shadow: 6px 6px 10px  rgba(230, 230, 230, 0.6);
+    -webkit-box-shadow: 6px 6px 10px  rgba(230, 230, 230, 0.6);
     -o-box-shadow: 10px 10px 10px  rgba(230, 230, 230, 0.6);
     border-radius: 25px;
 }
@@ -71,12 +84,12 @@ a {
 }
 
 .movingInfo {
-    background: rgb(231, 231, 231);
+    background-color: rgb(231, 231, 231);
     border-bottom-left-radius: 0px;
     border-top-left-radius: 0px;
     width: 80%;
     font-size: 2.5vmin;
-    border: rgb(212, 212, 212) .5px solid;
+    border-left: none;
     
 }
 
@@ -91,6 +104,7 @@ a {
 .socials {
     border: rgb(212, 212, 212) .5px solid;
     border-left: none;
+    border-right: none;
 }
 
 .socials marquee {
@@ -113,3 +127,38 @@ a {
 #oldWeb:hover{
     color: #459fff;
 }
+
+/* ---------------- ANIMATIONS ---------------------------------- */
+.animated {
+    -webkit-animation-duration: 10s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+ @-webkit-keyframes fadeInDown {
+    0% {
+       opacity: 0;
+       -webkit-transform: translateY(-20px);
+    }
+    100% {
+       opacity: 1;
+       -webkit-transform: translateY(0);
+    }
+ }
+
+ @keyframes fadeInDown {
+    0% {
+       opacity: 0;
+       transform: translateY(-20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+ }
+ 
+ .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+ }
