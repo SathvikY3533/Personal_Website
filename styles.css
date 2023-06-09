@@ -9,7 +9,7 @@ body {
 }
 
 footer {
-    color: rgb(166, 166, 166);
+    color: rgb(228, 0, 0);
     text-align: center;
     padding: 3px;
     margin-top: auto;
@@ -41,6 +41,7 @@ a {
 .titleBox, .resumeBox, .projectsList {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .resumeBox {
@@ -60,7 +61,7 @@ a {
 }
 
 
-.titleBox, .projectsList {
+.movingInfo, .projectsList {
     /* box-shadow: 10px 10px 5px rgb(189, 189, 189); */
     box-shadow: 6px 6px 10px  rgba(230, 230, 230, 0.6);
     -moz-box-shadow: 6px 6px 10px  rgba(230, 230, 230, 0.6);
@@ -87,10 +88,9 @@ a {
     background-color: rgb(231, 231, 231);
     border-bottom-left-radius: 0px;
     border-top-left-radius: 0px;
-    width: 80%;
+    width: 75.96%;
     font-size: 2.5vmin;
     border-left: none;
-    
 }
 
 .file {
@@ -107,9 +107,9 @@ a {
     border-right: none;
 }
 
-.socials marquee {
-    padding-top: 1.75vh;
-    width: 4.5vw;
+.socials dt {
+    padding-top: 1rem;
+    margin-left: 1.5vw;
 }
 
 #linkedIn:hover {
@@ -121,7 +121,7 @@ a {
 }
 
 #github:hover {
-    fill: #4b4b4b;
+    fill: #6e5494;
 }
 
 #oldWeb:hover{
@@ -162,3 +162,23 @@ a {
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
  }
+
+
+/* ---------------- Resizing Styles ---------------------------------- */
+@media only screen and (max-width: 1250px){
+    .socials {
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        border: rgb(212, 212, 212) .5px solid;
+        border-left: none;
+        padding-right: 1.5vw;
+    }
+
+    .titleBox {
+        justify-content: center;
+    }
+
+    .movingInfo {
+        border-radius: 25px;
+    }
+}
