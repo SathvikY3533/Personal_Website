@@ -9,10 +9,21 @@ body {
 }
 
 footer {
-    color: rgb(228, 0, 0);
-    text-align: center;
-    padding: 3px;
-    margin-top: auto;
+    padding-top: 80px;
+    margin: auto;
+    font-size: 1.2vw;
+}
+
+.movingInfo, .title{
+    padding: 2vmin; 
+    border-radius: 25px;
+}
+
+.title {
+    border: rgb(212, 212, 212) .5px solid;
+    padding-bottom: 0;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
 }
 
 .title h4 {
@@ -20,7 +31,7 @@ footer {
     text-align: center;
     margin: .75vh 0;
     height: 2vh;
-    padding: 1vh 0 1vh 1vw;
+    padding: 5% 0 5% 1vw;
     border-left:rgb(237, 237, 237) 3px solid;
 }
 
@@ -30,7 +41,8 @@ footer {
 }
 
 .title span {
-    font-size: .9vw;
+    font-size: 1.2vw;
+    margin-left: .5vw;
 }
 
 a {
@@ -38,31 +50,24 @@ a {
     text-decoration:none;
 }
 
-.titleBox, .resumeBox, .projectsList {
+.titleBox, .projectsList {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
 }
 
-.resumeBox {
-    margin: .5vh 0;
-    width: 10vw;
+.titleBox {
+    justify-content: center;
+
 }
 
-.projectsList {
-    background-color: rgb(231, 231, 231);
-    width: 20vw;
-    height: 30vh;
-    margin-top: 5vh;
-}
-
-#project1 {
-    padding: 0vh 1vw;
+#myImg {
+    border-radius: 25px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 
 .movingInfo, .projectsList {
-    /* box-shadow: 10px 10px 5px rgb(189, 189, 189); */
     box-shadow: 6px 6px 10px  rgba(230, 230, 230, 0.6);
     -moz-box-shadow: 6px 6px 10px  rgba(230, 230, 230, 0.6);
     -webkit-box-shadow: 6px 6px 10px  rgba(230, 230, 230, 0.6);
@@ -70,47 +75,23 @@ a {
     border-radius: 25px;
 }
 
-.movingInfo, .title {
-    padding: 2vmin;
-    border-radius: 25px;
-}
 
-.title {
-    border-bottom-right-radius: 0px;
-    border-top-right-radius: 0px;
-    width: 13.5vw;
-    border: rgb(212, 212, 212) .5px solid;
-    border-right: none;
-    padding-bottom: 0;
-}
 
 .movingInfo {
     background-color: rgb(231, 231, 231);
-    border-bottom-left-radius: 0px;
-    border-top-left-radius: 0px;
-    width: 75.96%;
     font-size: 2.5vmin;
-    border-left: none;
+    border-radius: 25px;
+    margin-top: 1vw;
 }
 
-.file {
-    padding-top: 1.2vh;
-}
-
-.pdf:hover {
-    color: #459fff;
-}
 
 .socials {
-    border: rgb(212, 212, 212) .5px solid;
-    border-left: none;
-    border-right: none;
+    position: relative;
+    top: 65%;
+    transform: translateY(-100%);
+    padding-bottom: 5%;
 }
 
-.socials dt {
-    padding-top: 1rem;
-    margin-left: 1.5vw;
-}
 
 #linkedIn:hover {
     color: rgb(0, 119, 181);
@@ -126,6 +107,23 @@ a {
 
 #oldWeb:hover{
     color: #459fff;
+}
+
+#pdf:hover {
+    color: #459fff;
+}
+
+
+
+.projectsList {
+    background-color: rgb(231, 231, 231);
+    width: 20vw;
+    height: 30vh;
+    margin-top: 5vh;
+}
+
+#project1 {
+    padding: 0vh 1vw;
 }
 
 /* ---------------- ANIMATIONS ---------------------------------- */
@@ -165,20 +163,6 @@ a {
 
 
 /* ---------------- Resizing Styles ---------------------------------- */
-@media only screen and (max-width: 1250px){
-    .socials {
-        border-bottom-right-radius: 10px;
-        border-top-right-radius: 10px;
-        border: rgb(212, 212, 212) .5px solid;
-        border-left: none;
-        padding-right: 1.5vw;
-    }
+/* @media only screen and (max-width: 1250px){
 
-    .titleBox {
-        justify-content: center;
-    }
-
-    .movingInfo {
-        border-radius: 25px;
-    }
-}
+} */
